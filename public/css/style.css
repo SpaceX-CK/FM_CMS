@@ -1,0 +1,1489 @@
+/************************************* FONTS & HANDY TOOLS  *************************************/
+
+/* Default Font (Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+/*Imported Font (Gotham) */
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/Gotham-Light.ttf);
+}
+
+.theme-color {
+    background-color: #073d27;
+    border-color: 073d27;
+}
+
+body,
+html {
+    font-family: Roboto;
+}
+
+
+
+h2 {
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+h5 {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+.text-green {
+    color: #124734 !important;
+}
+
+.text-light-green {
+    color: #b1b700 !important;
+}
+
+.text-neon-green {
+    color: #209280 !important;
+}
+
+#breadcrumbs {
+    padding: 15px 0;
+    background-color: rgba(247, 247, 247, 1);
+    color: rgba(68, 68, 68, 0.6);
+    font-size: 0.9rem;
+    box-shadow: inset 0px 4px 3px -2px rgb(0 0 0 / 6%);
+}
+
+#breadcrumbs ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#breadcrumbs a {
+    color: rgba(68, 68, 68, 0.6);
+    text-decoration: none;
+}
+
+#breadcrumbs span {
+    margin: 0 10px;
+    color: rgba(68, 68, 68, 0.6);
+}
+
+#breadcrumbs ul.breadcrumbs li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/************************************* Navigation Menu & Footer *************************************/
+
+nav {
+    background-color: #073d27;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0 2rem 0 !important;
+    z-index: 999999;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.sticky-top {
+    transition: padding 0.25s ease-in;
+}
+
+.scrolled-nav {
+    padding: 0.5rem 0 1rem 0 !important;
+}
+
+.nav-logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.nav-item {
+    position: relative;
+    top: 0.75rem;
+    font-family: "Gotham", Roboto;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#nav-product-dropdown {
+    font-size: 14px;
+    font-family: "Gotham", Roboto;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-lang-dropdown {
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+}
+
+#nav-lang-dropdown:hover,
+#nav-product-dropdown:hover {
+    color: #fff;
+}
+
+#nav-lang-menu a:hover,
+#nav-product-menu a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.dropdown-menu {
+    background-color: #073d27;
+    color: #bbbbbb;
+    min-width: 100%;
+}
+
+#nav-product-menu a {
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-item {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Gotham", Roboto;
+}
+
+.social-icons-header {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+#header-search {
+    background-color: transparent;
+    border-color: white;
+    position: relative;
+    top: 8px;
+    width: 90%;
+    margin-left: 1.5rem;
+}
+
+.header-right-border {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.header-left-border {
+    border-top-left-radius: 30px !important;
+    border-bottom-left-radius: 30px !important;
+}
+
+#footer {
+    background-color: #073d27;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-connect {
+    color: #bbbbbb;
+    font-size: 0.85rem;
+}
+
+.footer-icons {
+    color: #fff;
+    font-size: 0.85rem;
+    margin: 0 .25rem;
+}
+
+.footer-terms {
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.footer-cr {
+    font-size: 0.8rem;
+    text-align: right;
+    color: #bbbbbb;
+}
+
+/************************************* Home (Parallax Banner)  *************************************/
+
+/* #home-parallax {
+    background-image: url('../images/homepage/abkids-banner.png');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/************************************* Home (GreenTea)  *************************************/
+
+#home-greentea {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(../images/homepage/greentea-home.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#home-greentea h2 {
+    margin-bottom: 1rem;
+}
+
+#home-greentea p {
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 25px;
+}
+
+.greentea-wrapper {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 2%;
+    color: #fff;
+}
+
+/************************************* Home Infusion  *************************************/
+
+#home-infused {
+    padding-top: 80px;
+    background-image: url(../images/homepage/home-innovation.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#home-infused h1 {
+    margin: -30px auto 0;
+    display: table;
+    font-size: 30px;
+    background: #a2ca9e;
+    padding: 15px 25px;
+    line-height: 1;
+    position: relative;
+    top: 30px;
+}
+
+.infused-wrapper {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    border: 1px solid black;
+    border-bottom: none;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.infused-bottles {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.home-product-card {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+
+#home-infused p {
+    line-height: 1.4;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.infused-btn {
+    padding: 8px 17px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    background-color: #1f483c !important;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    left: 25%;
+}
+
+/************************************* About Us  *************************************/
+
+#about {
+    background-image: url(../images/about/about-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    padding-top: calc(30vh);
+    padding-bottom: calc(30vh);
+}
+
+/************************************* Contact Us  *************************************/
+
+#contact {
+    background-image: url(../images/contact/contact-bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 5rem 0;
+}
+
+.contact-white-box {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.contact-locate,
+.contact-delight {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+
+.contact-company {
+    font-size: 1.25rem;
+}
+
+.contact-info {
+    font-size: 0.9rem;
+}
+
+.contact-talk {
+    font-size: 2rem;
+}
+
+.contact-inputs {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    border-radius: 0px;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.contact-remarks-input {
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 0px;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.contact-inputs::placeholder,
+.contact-remarks {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.contact-textarea {
+    display: block;
+    background-color: transparent;
+    min-height: 300px;
+    width: 100%;
+}
+
+/************************************* Article (Intro Page)  *************************************/
+
+#article-covers {
+    min-height: 100vh;
+    padding: 5rem 0;
+    background-image: url(../images/article/cover/article-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+#article-covers .card {
+    margin: 0;
+}
+
+#article-covers h1 {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+.article-div{
+    margin-bottom: 2em;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 0.5s;
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transform: scale(1);
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card-footer {
+    background-color: #124734 !important;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #fff;
+    font-weight: bold;
+    border-radius: none !important;
+}
+
+/************************************* Article (Content Single Page)  *************************************/
+
+#article-content {
+    min-height: 100vh;
+    padding: 5rem 0;
+    background-image: url(../images/article/cover/article-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+#article-content h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+#article-content h5 {
+    font-weight: 900;
+    margin: 1rem 0;
+}
+
+#article-content p {
+    font-size: 0.9rem;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.article-upsell-product {
+    border: none;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.article-upsell-product p {
+    font-size: 1rem !important;
+    line-height: 20px !important;
+    font-weight: 500;
+}
+
+/************************************* Main Products Page (Display all)  *************************************/
+
+#main-products-category {
+    padding: 5rem 0;
+    background-image: url(../images/products/product-main-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+#main-products-category p {
+    margin-bottom: 0;
+}
+
+#main-products-category h2,
+#main-products-category h1 {
+    font-size: 1.75rem;
+}
+
+#main-products-category h2+p,
+#main-products-category h1+p {
+    margin-bottom: 2rem;
+}
+
+.products-main-button {
+    background: linear-gradient(to right, #083128, #3C6355);
+    border-radius: 50px;
+    color: #fff;
+    transition: all .3s ease;
+    padding: 0.5rem 4rem;
+}
+
+.products-main-button:hover {
+    opacity: 0.8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.products-upsell-product {
+    border: none;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.products-upsell-product p {
+    font-size: 1rem !important;
+    line-height: 20px !important;
+    font-weight: 500;
+}
+
+.single-products-main {
+    margin-bottom: 5rem;
+}
+
+/************************************* Single Products Page *************************************/
+
+#individual-products-showcase {
+    padding: 5rem 0;
+    background-image: url(../images/products/product-main-bg.jpg);
+}
+
+#individual-products-showcase p {
+    margin-bottom: 0;
+}
+
+/************************************* Information Page *************************************/
+
+#info-page {
+    padding: 5rem 0;
+    background-image: url(../images/products/product-main-bg.jpg);
+}
+
+#info-page .card img {
+    padding: 0.4rem;
+}
+
+#info-page h1 {
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+#info-page p {
+    font-size: 1rem;
+}
+
+.product-text {
+    font-weight: 400;
+}
+
+#product-weight-tags {
+    margin-top: 4rem;
+}
+
+.weight-tag {
+    background-color: #209280;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin-right: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.mini-package {
+    font-size: 0.8em !important;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+.info-full,
+.info-gap {
+    padding-bottom: 1rem;
+    background-image: url(../images/products/product-main-bg.jpg);
+}
+
+#product-ecommerce {
+    margin-top: 2rem;
+}
+
+.product-shop-btn {
+    padding: 0.75rem 2.5rem;
+    background-color: transparent;
+    border: 2px solid #209280;
+    color: #209280;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.product-shop-btn:hover {
+    background-color: #209280;
+    color: #fff;
+}
+
+.ecom-icons {
+    width: 100%;
+    height: auto;
+    max-width: 166px;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.ecom-shopbtn {
+    text-align: center;
+}
+
+#product-recommendation {
+    margin-top: 2rem;
+}
+
+#product-recommendation h6 {
+    margin-bottom: 1rem;
+}
+
+.upsell-paragraph {
+    text-align: center;
+    font-size: 0.8rem !important;
+    margin-top: 0.2rem;
+}
+
+#product-recommendation a:hover {
+    text-decoration: none;
+}
+
+/************************************* Privacy Policy & T&C  *************************************/
+
+#policies {
+    padding: 5rem 0;
+    background-image: url(../images/policies/policy-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+#policies p,
+#policies li {
+    font-size: 0.9rem;
+}
+
+#policies h1 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+
+/************************************************************************************ INDEX PAGE  *************************************************************************************/
+
+/* ---------------------------------------------------
+  MEDIA XXL Screens (1440 - 1599)
+  ----------------------------------------------------- */
+
+@media only screen and (min-width: 1440px) and (max-width: 1599px) {
+
+    .weight-tag {
+        padding: 0.4rem 1.6rem;
+    }
+
+    .ecom-icons {
+        width: 100%;
+        height: auto;
+        max-width: 166px;
+        margin: 0 0.5rem 0.5rem 0;
+    }
+
+}
+
+/* ---------------------------------------------------
+    MEDIA XL-XXL Screens (1200-1439)
+    ----------------------------------------------------- */
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    #about {
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+    }
+
+    .article-upsell-product p {
+        font-size: 0.8rem !important;
+    }
+
+    .weight-tag {
+        padding: 0.3rem 1.2rem;
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .mini-package {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .product-shop-btn {
+        padding: 0.35rem 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .ecom-icons {
+        max-width: 120px;
+        margin-right: 1rem;
+    }
+
+    .greentea-wrapper {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .infused-btn {
+        padding: 8px 17px;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        background-color: #1f483c !important;
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        left: 15%;
+    }
+    .card img {
+        height: 200px;
+    }
+    
+}
+
+/* ---------------------------------------------------
+    MEDIA LG-XL Screens (992-1199)
+    ----------------------------------------------------- */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .nav-item {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    #policies {
+        padding: 3rem 0;
+    }
+
+    .product-btn-container {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .products-main-button {
+        padding: 0.65rem 6rem;
+    }
+
+    .greentea-wrapper {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .home-product-card h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .home-product-card {
+        padding: 0;
+    }
+
+    .infused-btn {
+        padding: 8px 17px;
+        border-radius: 6px;
+        font-size: 0.8rem;
+        background-color: #1f483c !important;
+        color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        left: 5%;
+    }
+
+    #home-greentea {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    #home-greentea p {
+        font-size: 0.8rem;
+        line-height: 22px;
+    }
+
+    .weight-tag {
+        padding: 0.3rem 1.2rem;
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .mini-package {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .product-shop-btn {
+        padding: 0.325rem 1.25rem;
+        margin-right: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .ecom-icons {
+        max-width: 120px;
+        margin-right: 1rem;
+    }
+
+    #info-page h1 {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    #info-page p {
+        font-size: 0.95rem;
+    }
+
+    #product-weight-tags {
+        margin-top: 2rem;
+    }
+
+    .gap_override-product-upsell {
+        padding: 0.25rem;
+    }
+
+    .gap_override-article-page {
+        margin-bottom: 2rem;
+    }
+
+    #about {
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+    .ecom-shopbtn {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    .card img {
+        height: 200px;
+    }
+}
+
+/* ---------------------------------------------------
+    MEDIA MD-LG Screens (768-991)
+    ----------------------------------------------------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .mobile-nav {
+        width: 40% !important;
+        height: 100vh;
+        background-color: #191919;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        height: 100vh;
+        -webkit-transition: right 0.2s ease-in;
+        -o-transition: right 0.2s ease-in;
+        -moz-transition: right 0.2s ease-in;
+        transition: right 0.2s ease-in;
+        right: -100%;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        -webkit-transition: right 0.2s ease-in;
+        -o-transition: right 0.2s ease-in;
+        -moz-transition: right 0.2s ease-in;
+        transition: right 0.2s ease-in;
+    }
+
+    #nav-product-dropdown {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0;
+    }
+
+    .active-mobile-nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+    }
+
+    .navbar-logo-opacity {
+        opacity: 0.1 !important;
+    }
+
+    .navbar-mobile-transparency {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .navicon-location {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 3rem;
+    }
+
+    .nav-item {
+        padding: 0.2rem;
+        border-top: 1px solid rgba(255, 255, 255, .03)
+    }
+
+    #nav-lang-dropdown {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+        padding-left: 0;
+    }
+
+    .mob-header-icons {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #home-greentea p {
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 25px;
+    }
+
+    #home-greentea {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .greentea-wrapper {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #home-infused h1 {
+        font-size: 20px;
+    }
+
+    #about {
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+
+    .gap_override-article-page {
+        margin-bottom: 2rem;
+    }
+
+    .bacterial-article-gap {
+        padding: 0.3rem;
+    }
+
+    .contact-white-box {
+        margin-bottom: 3rem;
+    }
+
+    .mini-package {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    #info-page {
+        padding: 3rem 0;
+    }
+
+    .product-btn-container {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .products-main-button {
+        padding: 0.65rem 6rem;
+    }
+
+    .product-main-mb {
+        margin-bottom: 2rem;
+    }
+
+    .ecom-shopbtn {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    .card img {
+        height: 150px;
+    }
+}
+
+
+
+/* ---------------------------------------------------
+    MEDIA SM-MD Screens (600-767)
+    ----------------------------------------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+    .mobile-nav {
+        width: 40% !important;
+        height: 100vh;
+        background-color: #191919;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        height: 100vh;
+        -webkit-transition: right 0.2s ease-in;
+        -o-transition: right 0.2s ease-in;
+        -moz-transition: right 0.2s ease-in;
+        transition: right 0.2s ease-in;
+        right: -100%;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        -webkit-transition: right 0.2s ease-in;
+        -o-transition: right 0.2s ease-in;
+        -moz-transition: right 0.2s ease-in;
+        transition: right 0.2s ease-in;
+    }
+
+    #nav-product-dropdown {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0;
+    }
+
+    .navicon-location {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 3rem;
+    }
+
+    .active-mobile-nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+    }
+
+    .navbar-logo-opacity {
+        opacity: 0.1 !important;
+    }
+
+    .navbar-mobile-transparency {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-item {
+        padding: 0.2rem;
+        border-top: 1px solid rgba(255, 255, 255, .03)
+    }
+
+    #nav-lang-dropdown {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+        padding-left: 0;
+    }
+
+    .mob-header-icons {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #home-greentea p {
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 25px;
+    }
+
+    #home-greentea {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .greentea-wrapper {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #home-infused h1 {
+        font-size: 20px;
+    }
+
+    #about {
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+
+    .gap_override-article-page {
+        margin-bottom: 2rem;
+    }
+
+    .bacterial-article-gap {
+        padding: 0.3rem;
+    }
+
+    .contact-white-box {
+        margin-bottom: 3rem;
+    }
+
+    .mini-package {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    #info-page {
+        padding: 3rem 0;
+    }
+
+    .weight-tag {
+        padding: 0.5rem 1.1rem;
+    }
+
+
+    .product-btn-container {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .products-main-button {
+        padding: 0.65rem 6rem;
+    }
+
+    .product-main-mb {
+        margin-bottom: 2rem;
+    }
+
+    .ecom-shopbtn {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+}
+
+/* ---------------------------------------------------
+    MEDIA XS-SM Screens (0-599)
+    ----------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    .mobile-nav {
+        width: 50% !important;
+        height: 100vh;
+        background-color: #191919;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        height: 100vh;
+        -webkit-transition: right 0.2s ease-in;
+        -o-transition: right 0.2s ease-in;
+        -moz-transition: right 0.2s ease-in;
+        transition: right 0.2s ease-in;
+        right: -100%;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        -webkit-transition: right 0.2s ease-in;
+        -o-transition: right 0.2s ease-in;
+        -moz-transition: right 0.2s ease-in;
+        transition: right 0.2s ease-in;
+    }
+
+    .active-mobile-nav {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+    }
+
+    #nav-product-dropdown {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0;
+    }
+
+    .navbar-logo-opacity {
+        opacity: 0.1 !important;
+    }
+
+    .navicon-location {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 3rem;
+    }
+
+    .navbar-mobile-transparency {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-item {
+        padding: 0.2rem;
+        border-top: 1px solid rgba(255, 255, 255, .03)
+    }
+
+    #nav-lang-dropdown {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+        padding-left: 0;
+    }
+
+    .mob-header-icons {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+    }
+
+    #home-greentea p {
+        font-weight: 400;
+        font-size: 0.85rem;
+        line-height: 25px;
+    }
+
+    #home-greentea {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .greentea-wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #home-infused h1 {
+        font-size: 20px;
+    }
+
+    #about {
+        padding-top: 15vh;
+        padding-bottom: 35vh;
+        background-size: cover;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 0.9rem;
+    }
+
+    .gap_override-article-page {
+        margin-bottom: 2rem;
+    }
+
+    .bacterial-article-gap {
+        padding: 0.3rem;
+    }
+
+    .contact-white-box {
+        margin-bottom: 3rem;
+    }
+
+    .mini-package {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    #info-page {
+        padding: 3rem 0;
+    }
+
+    .weight-tag {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.7rem;
+    }
+
+
+    .product-btn-container {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .products-main-button {
+        padding: 0.65rem 6rem;
+    }
+
+    .product-main-mb {
+        margin-bottom: 2rem;
+    }
+
+    .product-shop-btn {
+        padding: 0.5rem 2rem;
+    }
+
+    .ecom-icons {
+        max-width: 150px;
+        display: block;
+        margin: 0.75rem 0;
+    }
+
+    .footer-terms {
+        font-size: 0.7rem;
+    }
+
+    .gap_override-product-upsell {
+        padding: 0.25rem 0 0 0.75rem;
+    }
+
+    #info-page h1 {
+        font-size: 1.75rem;
+    }
+
+    #contact {
+        background-size: cover;
+        padding: 3rem 0;
+    }
+
+    .contact-white-box {
+        margin-bottom: 2rem;
+    }
+
+    .nav-logo {
+        margin-left: 1.5rem;
+        max-width: 250px;
+    }
+
+    .products-upsell-product p {
+        font-size: 0.8rem !important;
+    }
+
+    #home-greentea p {
+        font-size: 0.7rem;
+        line-height: 18px;
+    }
+
+    #home-greentea h2 {
+        font-size: 1.5rem;
+    }
+
+    #home-infused h1 {
+        text-align: center;
+    }
+
+    .infused-wrapper {
+        border: none;
+    }
+
+    .infused-btn {
+        position: relative;
+        left: auto;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #home-infused p {
+        margin-bottom: 1rem;
+    }
+
+    #home-infused {
+        padding-top: 30px;
+    }
+
+    .infused-wrapper {
+        padding-top: 30px;
+    }
+
+    .infused-wrapper .card img {
+        max-width: 150px;
+    }
+
+    #main-products-category h2,
+    #main-products-category h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #main-products-category h2+p,
+    #main-products-category h1+p {
+        text-align: center;
+    }
+
+    #main-products-category {
+        padding: 3rem 0;
+    }
+
+    .ecom-shopbtn {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+}
